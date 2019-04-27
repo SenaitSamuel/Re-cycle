@@ -1,0 +1,822 @@
+/* CSS Document */
+
+
+/*********************************
+1 font
+*********************************/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	line-height: 23px;
+	font-weight: 400;
+	background: #FFFFFF;
+	color: #1e1e27;
+}
+#container
+{
+   max-width: 1200px ;
+   margin: 0 auto; 
+   position: relative;
+	
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+   
+h1{font-size: 40px;}
+h2{font-size: 30px;}
+h3{font-size: 28px;}
+
+
+/*********************************
+ 1. header 
+*********************************/
+header
+{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #FFFFFF;
+	z-index: 10;
+}
+
+/*********************************
+2  Navigation
+*********************************/
+
+.nav_container 
+{
+	display: flex;
+    flex-direction: row;
+	background: #00802b;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+    height: 100px;
+    padding: 10px;
+}
+
+.logo_container
+{
+	position: relative;
+	top: 55%;
+	left: 100px;
+
+}
+.logo_container a
+{
+	font-size: 45px;
+	color: #1e1e27;
+	font-weight: 700;
+    text-decoration: none
+}
+.logo_container a span
+{
+	color:  #ffff;
+}
+
+.navbar
+{
+	width: 100%;
+	height: 90px;
+	margin-left: 20%;
+	padding-right: 20px;
+    
+}
+
+
+.navbar_menu li
+{
+	display: inline-block;
+}
+
+.navbar_menu li a
+{
+	display: block;
+	color: #ffff;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 20px;
+    margin-top: 22%;
+    text-decoration: none;
+    
+	
+}
+.navbar_menu li a:hover
+{
+    background-color: transparent;
+    color: #fe4c50;
+    border-bottom: solid 3px #fe4c50;
+    cursor: pointer;
+}
+
+
+ /*********************************
+3 Hamburger Menu
+*********************************/
+.nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30px 0 0;
+    list-style-type: none;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    margin: 0 10px;
+    visibility: hidden;
+    color: #1e1e27;
+	font-weight: 500;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	text-transform: uppercase;
+    background-color: #EAEAEB;
+    border-bottom: 2px solid #ffffff;
+    
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+display: none;
+}
+/*********************************
+4. Index page 
+*********************************/
+
+/*********************************
+5 Main Slider
+*********************************/
+
+.main_slider
+{
+	width: 100%;
+	height: 480px;
+	background-repeat: no-repeat;
+	margin-top: 150px;
+}
+
+
+.hero_image
+{
+	width: 100%;
+    height: 100px;
+    margin-top: -30%;
+}
+
+.hero_image img
+{
+	width: 100%;
+}
+
+.main_slider_content
+{
+	width: 50%;
+    height: 50%;
+    top: 100px;  
+    left: 50px; 
+    padding: 20px;
+    position: relative;
+    background-color: rgb(224,224,224) ;
+    opacity: 0.9;
+}
+.main_slider_content h2
+{
+	font-weight: 400;
+	line-height: 1;
+    text-align: center;
+}
+.main_slider_content h3
+{
+	font-weight: 400;
+	line-height: 1;
+    text-align: center;
+}
+
+
+button {
+    background-color: #339933;
+    color: #ffffff;
+    position: absolute;
+    font-size: 18px;  
+    font-weight: bold;  
+}
+
+button:hover{
+    opacity: 0.5;
+    background-color: #fe4c50;
+}
+
+.btn_banner{
+    width: 30%;
+    height: 20%;
+    top: 70%;
+    margin-left: 30%;
+}
+.btn_banner a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/*********************************
+ 6. Content  Grid for index page
+*********************************/
+
+.index_content-grid
+{
+    display: grid;
+    grid-gap: 50px;
+    padding: 20px 20px 20px 20px;
+    justify-content: space-between;
+    grid-template-columns: 1fr  1fr 1fr 1fr ;
+    margin: 130px 50px 30px 50px; 
+ }
+
+
+.index_content-item
+{
+    display: block;
+	position: relative;
+	width: 100%;
+    height: 372px;
+    
+    
+    
+}
+
+
+.index_image img
+{
+	width: 100%;
+    height: 150px;
+    padding-top: 40px;
+}
+
+.index_content_info
+{
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+    font-size: 14px;
+}
+.index_content_name
+{
+	margin-top: 15px;
+    text-align: left;
+    
+}
+.index_content_name a
+{
+	color: #1e1e27;
+	line-height: 20px;
+    text-decoration: none;
+}
+
+
+
+.index_content-item:hover 
+{
+	
+    visibility: visible;
+	opacity: 0.7;
+}
+.booking_button
+{
+	width: 100%;
+    text-align: left;
+    bottom: 100px;    
+		
+}
+.booking_button a
+{
+	font-size: 15px;
+	font-weight: 600;
+    color: #005ce6;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 10px;
+      
+}
+
+
+
+/*******************************
+7. Bottom Slider
+*********************************/
+
+.bottom_slider_slider
+{
+	width: 100%;
+	height: 350px;
+	
+}
+
+
+.bottom_image
+{
+	width: 100%;
+    height: 80px;
+    margin-top: 10%;
+   
+}
+
+.bottom_image img
+{
+	width: 100%;
+}
+
+.bottom_slider_content
+{
+	width: 30%;
+    height: 10%;
+    left: 75px; 
+    margin-top: 15%; 
+    padding-left: 15px;
+    position: absolute;
+    background-color: rgb(224,224,224) ;
+}
+.bottom__slider_content h3
+{
+	font-weight: 400;
+	line-height: 1;
+    text-align: center;
+}
+ .btn_bottom_banner{
+    width: 30%;
+    height: 25%;
+    margin-left: 22%;
+     
+}
+.btn_bottom_banner a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/*********************************
+ 8. Footer
+*********************************/
+
+/* footer*/
+footer {
+    padding: 1em;
+    color: white;
+    background-color: #00802b;
+	margin-top: 30%;
+	width: 100%;
+    height: 100px;
+
+}
+.social_media ul{
+     text-decoration: none;
+      margin-left: 0px;
+    
+    
+}
+.social_media li{
+    display: inline-block;
+    padding: 20px;  
+    height: 30px;   
+
+}
+
+.social_media a{
+    text-decoration-line: none;
+    color: #ffffff;  
+    padding: 20px;
+    font-size: 20px;
+    width: 15px;
+    text-align: center;
+    margin: 5px 2px;
+    
+}
+   
+.social_media a:hover{
+   opacity: 0.7;
+}
+  
+    
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+/*****************/   
+/* contact page*/
+
+.contact_container{
+   margin-top: 15%;
+  
+
+    
+}
+ 
+input[type="text"]{
+    width: 100%;
+    border: solid 1px lightgrey;
+    height: 45px;
+    padding: 10px;
+    outline: none;
+}
+input[type="submit"]{
+    width: 200px;
+    height: 45px;
+    padding: 10px;
+    background-color: #00802b;
+    color: #ffffff;
+    font-size: 18px;  
+    font-weight: bold; 
+    border: solid 1px lightgrey;
+}
+
+
+input[type="submit"]:hover{
+    opacity: 0.5;
+    background-color: #fe4c50;
+}
+.error{
+    color: red;
+    display: none;
+}
+.col{
+    padding: 15px;
+}
+
+.btn_form{
+     width: 180px;
+    height: 50px;
+    margin-left: 10px;  
+}
+
+
+/* About us page*/
+
+
+/*********************************
+ 6. Content  Grid for about page
+*********************************/
+.about_title{
+    margin-top: 170px;
+    border-bottom: solid 1px  #e0ebeb;
+    padding-left: 20px;
+}
+.about_content-grid
+{
+    display: grid;
+    grid-gap: 50px;
+    padding: 20px 20px 20px 20px;
+    justify-content: space-between;
+    grid-template-columns: 1fr  1fr  ;
+    margin: 20px 50px 30px 10px; 
+ }
+
+
+.about_content-item
+{
+    display: block;
+	position: relative;
+	width: 100%;
+    height: 372px;
+    
+    
+    
+}
+
+
+.about_image img
+{
+	width: 100%;
+    height: 180px;
+    padding-top: 40px;
+}
+
+/* Route page*/
+.route_container{
+    height: 60%;
+    margin-top: 15%;
+    width: 50%;
+}
+select{
+    width: 40%;
+    padding: 10px;
+    
+}
+.btn_go{
+     width: 120px;
+    height: 50px;
+    margin-left: 10%;  
+}
+option{
+    width: 25%;
+}
+
+
+
+/************
+@media only screen  for homepage
+************
+
+
+/************
+1. 959px
+************/
+@media only screen and (max-width: 959px)
+{
+ /*********************************
+1. Nagviation
+*********************************/ 
+.navbar_menu
+{
+    display: none;
+}
+
+/*********************************
+2. Hamburger Menu
+*********************************/ 
+    
+label {
+    display: block;
+    cursor:pointer;
+    margin-top:20px;
+    right: -90%;
+}
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.menu a {
+   
+    visibility: visible;
+    display: block;
+	
+}
+#toggle:checked + .menu {
+    display: block;
+}
+
+
+
+
+
+}
+     
+  
+/************
+1. 768px
+************/
+@media only screen and (max-width: 768px)
+{
+/*********************************
+   1.  header
+*********************************/
+    
+h1{font-size: 36px;}
+	h2{font-size: 24px;}
+	h3{font-size: 15px;}
+    
+header
+{
+	border-bottom: 2px solid #EAEAEB;
+}
+
+.navbar_menu
+{
+    display: none;
+}
+
+    
+label {
+    display: block;
+    cursor:pointer;
+    margin-top: 0;
+    right: -50
+}
+.menu {
+    text-align: center;
+    display: none;
+    width: 250px;
+    margin-left: 50%;
+    margin-top: -5px;
+}
+
+.logo_container
+{
+
+top: 60%;
+left: 50px;
+
+}
+.logo_container a
+{
+font-size: 35px;
+
+}
+
+/**********************************
+ 2. Main Slider
+*********************************/
+
+.hero_image
+{
+	 margin-top: -40%;
+    margin-left: 5%;
+}
+    
+ .main_slider_content
+{
+	width: 100%;
+    top: 80px; 
+    left: 0px; 
+    background-color: rgb(224,224,224) ;
+}
+
+
+.btn_banner
+{
+	height: 40px;
+    margin-top: -10px;
+    	
+}
+
+/*********************************
+ 3. Content Grid for index page
+*********************************/
+
+.index_content-grid
+{
+    
+    grid-gap: 60px;
+    padding: 20px 0px;
+    grid-template-columns: 1fr  1fr 1fr  ;
+    margin: 0px 30px;
+ }
+
+.index_image
+{
+	width: 100%;
+    height: auto;
+    padding-top: 40px;
+}
+
+
+.index_content_name
+{
+	margin-top: 5px;
+      
+}
+.bottom_slider_content
+{
+	width: 50%;
+    height: 100px;
+    left: 70px; 
+    margin-top: 30px; 
+    
+}
+ .btn_bottom_banner{
+    width: 50%;
+    height: 20px;
+    margin-left: 20%;
+    font-size: 15px;
+     
+} 
+
+
+.social_media a{
+    
+    padding: 10px;
+    font-size: 15px;
+    width: 10px;
+    text-align: left;
+    margin: 2px 2px;
+    
+}
+    /*********************************
+contentfor about page
+*********************************/
+    .about_content-grid
+{
+    
+    grid-gap: 20px;
+    padding: 20px 0px;
+    grid-template-columns: 1fr   ;
+    margin: 0px 30px;
+ }
+
+.index_image
+{
+	width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+.btn_form{
+     
+   margin-left: 20%;
+}
+}
+
+
+/************
+ 575px
+************/
+
+
+@media only screen and (max-width: 575px)
+    
+{
+    
+
+/*********************************
+content Grid for index page
+*********************************/
+
+.index_content-grid
+{
+   
+    grid-gap: 40px;
+    padding: 20px 20px;
+    grid-template-columns: 1fr  1fr  ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 45px;
+ } 
+      
+}
+
+
+/************
+ 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+
+/*********************************
+content  Grid for index page
+*********************************/
+
+.index_content-grid
+{
+    grid-template-columns: 1fr   ;
+ 
+ } 
+  .social_media a{
+    
+    padding: 5px;
+    font-size: 15px;
+    width: 10px;
+    text-align: left;
+    margin: 2px 2px;
+    
+}  
+ 
+}
+
+
+
+ 
+    
+
+   
+
+    
+    
+    
+    
+

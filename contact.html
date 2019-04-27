@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Re cycle</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="style2.css">
+
+	</head>
+    <body>
+        
+          <div id="container">
+              
+ <!-- Header -->  
+             
+                  <header>
+                  
+                   <!--  Navigation --> 
+                
+                <div class="nav_container">
+                      <div class="logo_container">
+                          <a href="index2.html"><span> Recycle</span></a> 
+						</div>
+						<nav class="navbar">
+							<ul class="navbar_menu">
+								<li><a href="index2.html">Home</a></li>
+								<li><a href="routes.html">List of Routes</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="about.html">About Us</a></li>
+								
+							</ul>
+                             <div class="nav">
+                                    <label for="toggle">&#9776;</label>
+                                    <input type="checkbox" id="toggle"/>
+                                    <div class="menu">
+                                        <li><a href="index2.html">Home</a></li>
+                                        <li><a href="routes.html">List of Routes</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                    </div>
+                             </div>
+                
+						</nav>
+                  </div>
+                  
+              </header>
+    
+    
+
+<section>
+     <div class="contact_container">
+        <div class="row">
+            <h2> Contact Form</h2>
+        </div>
+        <div class="row">
+            <form onsubmit="return validateForm()" name="myForm";>
+            <div class="col">
+             Name: <input type="text" name="firstName" id="firstName" placeholder="First name">
+             <span class="error" id="firstNameError">This field cannot be blank</span>
+            </div>
+             <div class="col">
+             Last Name: <input type="text" name="lastName" id="lastName" placeholder="Last name">
+             <span class="error" id="lastNameError">This field cannot be blank</span>
+            </div>
+             <div class="col">
+           Telephone: <input type="text" name="phone" id="phoneNumber" placeholder="Phone number">
+             <span class="error" id="phoneError">This field cannot be blank</span>
+            </div>
+             <div class="col">
+             Email: <input type="text" name="email" id="email" placeholder="Email adress">
+             <span class="error" id="emailError">This field cannot be blank</span>
+            </div>
+            <div class="col">
+               <a href="sucess.html"><input class="btn_form" type="submit" name="Submit" id="mySubmit" value="Submit"></a> 
+               
+            
+            </div>
+            </form>
+        </div>
+    
+    </div>  
+			
+    
+    
+    </section>
+    
+
+<!-- Footer -->
+
+<footer>
+    <div class="social_media">
+     <ul>
+         <li><a href="#" class="fa fa-facebook"></a></li>
+         <li><a href="#" class="fa fa-twitter"></a></li>
+         <li><a href="#" class="fa fa-google"></a></li>
+         <li><a href="#" class="fa fa-instagram"></a></li>
+     </ul>
+ </div>
+
+</footer>
+  
+     <script src="script.js"></script>         
+              
+
+</div>
+
+</body>
+
+</html>
